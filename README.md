@@ -22,9 +22,9 @@ Copy the source code in you project
 ### You must set the CCSpringUpNavController.view.frame. the height is the pop view's visible height
 
 ```objectivec
-    CCSpringUpNavController *ccnav = [[CCSpringUpNavController alloc]initWithRootViewController:[[ShowUpViewController alloc]init]];
+CCSpringUpNavController *ccnav = [[CCSpringUpNavController alloc]initWithRootViewController:[[ShowUpViewController alloc]init]];
     //should set CCSpringUpNavController.view.frame
-      ccnav.view.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 400);
+ccnav.view.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 400);
     // set optionalValues
 //    ccnav.tapDismissEnabled = YES;
 //    ccnav.annimationDuration = 0.35f;
@@ -33,6 +33,7 @@ Copy the source code in you project
 //    ccnav.springDamping = 0.88;
 //    ccnav.springVelocity = 14;
 //    ccnav.backgroundShadeAlpha = 0.4;
+[self presentViewController:ccnav animated:YES completion:nil];
 ```
 
 ## License
