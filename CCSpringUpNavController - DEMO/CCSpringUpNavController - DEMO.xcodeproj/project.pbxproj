@@ -15,6 +15,9 @@
 		2CFD96701F0CB34500B1246C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CFD966E1F0CB34500B1246C /* LaunchScreen.storyboard */; };
 		2CFD967B1F0CB34500B1246C /* CCSpringUpNavController___DEMOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFD967A1F0CB34500B1246C /* CCSpringUpNavController___DEMOTests.m */; };
 		2CFD96861F0CB34500B1246C /* CCSpringUpNavController___DEMOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFD96851F0CB34500B1246C /* CCSpringUpNavController___DEMOUITests.m */; };
+		2CFD96961F0CB4F100B1246C /* CCSpringUpNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFD96951F0CB4F100B1246C /* CCSpringUpNavController.m */; };
+		2CFD96991F0CB50F00B1246C /* CCSpringUpTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFD96981F0CB50F00B1246C /* CCSpringUpTransition.m */; };
+		2CFD969C1F0CB7C700B1246C /* ShowUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFD969B1F0CB7C700B1246C /* ShowUpViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		2CFD96811F0CB34500B1246C /* CCSpringUpNavController - DEMOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CCSpringUpNavController - DEMOUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CFD96851F0CB34500B1246C /* CCSpringUpNavController___DEMOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CCSpringUpNavController___DEMOUITests.m"; sourceTree = "<group>"; };
 		2CFD96871F0CB34500B1246C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CFD96941F0CB4F100B1246C /* CCSpringUpNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSpringUpNavController.h; sourceTree = "<group>"; };
+		2CFD96951F0CB4F100B1246C /* CCSpringUpNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSpringUpNavController.m; sourceTree = "<group>"; };
+		2CFD96971F0CB50F00B1246C /* CCSpringUpTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSpringUpTransition.h; sourceTree = "<group>"; };
+		2CFD96981F0CB50F00B1246C /* CCSpringUpTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSpringUpTransition.m; sourceTree = "<group>"; };
+		2CFD969A1F0CB7C700B1246C /* ShowUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowUpViewController.h; sourceTree = "<group>"; };
+		2CFD969B1F0CB7C700B1246C /* ShowUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowUpViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +110,13 @@
 		2CFD965F1F0CB34500B1246C /* CCSpringUpNavController - DEMO */ = {
 			isa = PBXGroup;
 			children = (
+				2CFD96931F0CB4BF00B1246C /* CCSpringUpNavController */,
 				2CFD96631F0CB34500B1246C /* AppDelegate.h */,
 				2CFD96641F0CB34500B1246C /* AppDelegate.m */,
 				2CFD96661F0CB34500B1246C /* ViewController.h */,
 				2CFD96671F0CB34500B1246C /* ViewController.m */,
+				2CFD969A1F0CB7C700B1246C /* ShowUpViewController.h */,
+				2CFD969B1F0CB7C700B1246C /* ShowUpViewController.m */,
 				2CFD96691F0CB34500B1246C /* Main.storyboard */,
 				2CFD966C1F0CB34500B1246C /* Assets.xcassets */,
 				2CFD966E1F0CB34500B1246C /* LaunchScreen.storyboard */,
@@ -138,6 +150,17 @@
 				2CFD96871F0CB34500B1246C /* Info.plist */,
 			);
 			path = "CCSpringUpNavController - DEMOUITests";
+			sourceTree = "<group>";
+		};
+		2CFD96931F0CB4BF00B1246C /* CCSpringUpNavController */ = {
+			isa = PBXGroup;
+			children = (
+				2CFD96941F0CB4F100B1246C /* CCSpringUpNavController.h */,
+				2CFD96951F0CB4F100B1246C /* CCSpringUpNavController.m */,
+				2CFD96971F0CB50F00B1246C /* CCSpringUpTransition.h */,
+				2CFD96981F0CB50F00B1246C /* CCSpringUpTransition.m */,
+			);
+			name = CCSpringUpNavController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +296,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CFD96991F0CB50F00B1246C /* CCSpringUpTransition.m in Sources */,
 				2CFD96681F0CB34500B1246C /* ViewController.m in Sources */,
+				2CFD969C1F0CB7C700B1246C /* ShowUpViewController.m in Sources */,
 				2CFD96651F0CB34500B1246C /* AppDelegate.m in Sources */,
 				2CFD96621F0CB34500B1246C /* main.m in Sources */,
+				2CFD96961F0CB4F100B1246C /* CCSpringUpNavController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +535,7 @@
 				2CFD968C1F0CB34500B1246C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CFD968D1F0CB34500B1246C /* Build configuration list for PBXNativeTarget "CCSpringUpNavController - DEMOTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +544,7 @@
 				2CFD968F1F0CB34500B1246C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CFD96901F0CB34500B1246C /* Build configuration list for PBXNativeTarget "CCSpringUpNavController - DEMOUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +553,7 @@
 				2CFD96921F0CB34500B1246C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
